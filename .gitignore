@@ -1,0 +1,27 @@
+# Originaux des images IA (lourds, ~50 Mo) — non versionnés
+images/originals/
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Node (si jamais on rajoute des outils)
+node_modules/
+package-lock.json
