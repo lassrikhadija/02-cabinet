@@ -12,7 +12,7 @@ Usage:
     python scripts/optimize-images.py
 """
 from pathlib import Path
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, ImageDraw, ImageFilter
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -47,6 +47,49 @@ def trim_alpha(img: Image.Image) -> Image.Image:
         img = img.convert("RGBA")
     bbox = img.getbbox()
     return img.crop(bbox) if bbox else img
+
+
+def remove_ai_watermark(img: Image.Image, frac_w: float = 0.13, frac_h: float = 0.16) -> Image.Image:
+    """Supprime le watermark IA (etoile Gemini) en bas-droite.
+    1. Clone depuis le bandeau au-dessus (continuite de fond)
+    2. Mix 65/35 avec un clone depuis la gauche (renforcement)
+    3. Masque a bords flous SEULEMENT sur le haut et la gauche (les
+       bords interieurs visibles), pas sur le bas et la droite (qui
+       touchent les bords de l'image, donc pas de couture visible)."""
+    img = img.copy()
+    if img.mode not in ("RGB", "RGBA"):
+        img = img.convert("RGB")
+    w, h = img.size
+    wm_w = int(w * frac_w)
+    wm_h = int(h * frac_h)
+    wm_left = w - wm_w
+    wm_top = h - wm_h
+
+    sample_top = wm_top - wm_h
+    sample_left = wm_left - wm_w
+    if sample_top < 0 or sample_left < 0:
+        return img
+
+    sample_above = img.crop((wm_left, sample_top, w, wm_top))
+    sample_side = img.crop((sample_left, wm_top, wm_left, h))
+    arr_a = np.array(sample_above).astype(np.float32)
+    arr_s = np.array(sample_side).astype(np.float32)
+    blended = (arr_a * 0.65 + arr_s * 0.35).astype(np.uint8)
+    sample = Image.fromarray(blended)
+
+    # Masque : 100% partout, dégradé seulement sur top et left
+    feather = max(12, int(min(wm_w, wm_h) * 0.25))
+    arr_mask = np.full((wm_h, wm_w), 255, dtype=np.uint8)
+    # Dégradé rampe sur les `feather` premiers pixels (haut + gauche)
+    for i in range(feather):
+        v = int(255 * (i / feather))
+        arr_mask[i, :] = np.minimum(arr_mask[i, :], v)
+        arr_mask[:, i] = np.minimum(arr_mask[:, i], v)
+    mask = Image.fromarray(arr_mask, mode="L")
+    mask = mask.filter(ImageFilter.GaussianBlur(radius=feather // 3))
+
+    img.paste(sample, (wm_left, wm_top), mask)
+    return img
 
 
 def recolor_blue_logo(img: Image.Image, target_rgb: tuple) -> Image.Image:
@@ -134,6 +177,9 @@ def optimize_photo(filename: str, target_w: int, out_name: str):
 
     img = Image.open(src)
     img = ImageOps.exif_transpose(img)
+
+    # Supprime le watermark IA (etoile Gemini) avant tout traitement
+    img = remove_ai_watermark(img)
 
     # Resize si trop large
     w, h = img.size
