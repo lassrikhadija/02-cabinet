@@ -13,6 +13,7 @@ Usage:
 """
 from pathlib import Path
 from PIL import Image, ImageOps
+import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "images" / "originals"
@@ -36,6 +37,9 @@ PHOTO_TARGETS = {
 WEBP_QUALITY = 82
 JPG_QUALITY = 85
 
+# Charte refondue : eucalyptus profond (remplace bleu pétrole)
+LOGO_TARGET_RGB = (61, 90, 78)  # #3D5A4E
+
 
 def trim_alpha(img: Image.Image) -> Image.Image:
     """Trim transparent borders to content bbox."""
@@ -43,6 +47,31 @@ def trim_alpha(img: Image.Image) -> Image.Image:
         img = img.convert("RGBA")
     bbox = img.getbbox()
     return img.crop(bbox) if bbox else img
+
+
+def recolor_blue_logo(img: Image.Image, target_rgb: tuple) -> Image.Image:
+    """Le logo source a un fond damier gris BAKED (pas vraiment transparent).
+    On detecte les pixels bleus (logo) -> recoloriser en target_rgb,
+    le reste -> vraiment transparent. Anti-aliasing preserve via alpha proportionnelle."""
+    arr = np.array(img.convert("RGBA"))
+    r = arr[:, :, 0].astype(np.int16)
+    g = arr[:, :, 1].astype(np.int16)
+    b = arr[:, :, 2].astype(np.int16)
+
+    # Mask : pixels où le bleu domine clairement (logo bleu canard)
+    is_blue = (b > r + 25) & (b > g + 5) & (r < 220)
+
+    # Alpha proportionnelle a la saturation : pixels bleu profond = opaques,
+    # pixels bleu clair (anti-aliasing) = partiellement transparents
+    alpha = np.clip((255 - r) * 1.4, 0, 255).astype(np.uint8)
+    alpha = np.where(is_blue, alpha, 0).astype(np.uint8)
+
+    out = np.zeros_like(arr)
+    out[..., 0] = target_rgb[0]
+    out[..., 1] = target_rgb[1]
+    out[..., 2] = target_rgb[2]
+    out[..., 3] = alpha
+    return Image.fromarray(out, mode="RGBA")
 
 
 def extract_logo_variants():
@@ -54,8 +83,10 @@ def extract_logo_variants():
         return
 
     img = Image.open(src).convert("RGBA")
+    # Recolor : detection bleu -> eucalyptus, reste -> transparent
+    img = recolor_blue_logo(img, LOGO_TARGET_RGB)
     W, H = img.size
-    print(f"[logo] Source: {W}x{H}")
+    print(f"[logo] Source: {W}x{H} (bleu -> eucalyptus #3D5A4E + fond transparent)")
 
     # On enleve le bas 14% (labels "Variation Carree" / "Variation Horizontale")
     label_cutoff = int(H * 0.86)
