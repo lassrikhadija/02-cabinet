@@ -130,7 +130,7 @@ Sous-domaine cible : `clinique-dentaire-demo.nextiweb.ca`
 
 ## Crédits
 
-- ✨ **Conçu par [Nextiweb.ca](https://nextiweb.ca)** — agence web montréalaise
+- **Conçu par [Nextiweb.ca](https://nextiweb.ca)** — agence web montréalaise
 - Contenu : démo fictive (cabinet, équipe, témoignages tous fictifs)
 - Photos : générées par IA
 - Logo : généré par IA, retravaillé via `scripts/optimize-images.py`

@@ -174,7 +174,7 @@
 
   /* ----------- Reveal on scroll (IntersectionObserver) ----------- */
   if ('IntersectionObserver' in window) {
-    const targets = document.querySelectorAll('.service, .member, .pillar, .testi, .info-block, .pricing__row');
+    const targets = document.querySelectorAll('.service, .member, .pillar, .testi, .info-block, .pricing__row, .nx-card');
     targets.forEach((el) => el.classList.add('reveal'));
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -186,6 +186,22 @@
     }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
     targets.forEach((el) => io.observe(el));
   }
+
+  /* ----------- Spotlight cursor-follow sur les cards Nextiweb ----------- */
+  const spotlightCards = document.querySelectorAll('[data-spotlight]');
+  spotlightCards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--mx', x + '%');
+      card.style.setProperty('--my', y + '%');
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.removeProperty('--mx');
+      card.style.removeProperty('--my');
+    });
+  });
 
   /* ----------- Année dynamique footer (si présente) ----------- */
   const yearEl = document.getElementById('year');
