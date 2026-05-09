@@ -53,14 +53,19 @@ Site **one-page** (12 sections + header + footer) :
 
 ## Charte
 
+Palette « Clinical Premium 2026 » — bleu marine + menthe glacial + or champagne.
+
 | Token | Valeur |
 |-------|--------|
-| Primaire | `#1E5F8E` (bleu pétrole) |
-| Secondaire | `#7FB3A4` (vert sauge) |
-| Texte | `#1A1A2E` |
-| Surface | `#FFFFFF` / `#F4F7FA` |
-| Typo display | Plus Jakarta Sans |
-| Typo body | Inter |
+| Fond | `#FAFAF7` (blanc cassé perlé) |
+| Surface | `#FFFFFF` (blanc pur) |
+| Primaire | `#0F2A3F` (bleu marine profond) |
+| Accent menthe | `#7FD1B9` (frais, clinique) |
+| Accent or | `#C9A876` (or champagne, luxe) |
+| Texte | `#0B1620` (bleu nuit) |
+| Bordure | `#E2E8EC` |
+| Typo display | Fraunces (serif moderne) |
+| Typo body | Inter / Plus Jakarta Sans |
 
 ## Développement
 

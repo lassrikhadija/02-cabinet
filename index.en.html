@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#1E5F8E">
+<meta name="theme-color" content="#0F2A3F">
 <title>Studio Dentaire Belmont — Family dental practice in Montreal</title>
 <meta name="description" content="Bilingual family dental practice in Montreal. Gentle, transparent, personalized care: cleanings, whitening, implants, clear aligners. Online booking, 24/7 emergencies.">
 <meta name="keywords" content="dentist Montreal, bilingual dental clinic, teeth whitening, implants, clear aligners, dental emergencies, family dentist, Plateau dental office">
@@ -40,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap">
 
-<link rel="preload" as="image" href="images/optimized/hero.webp?v=2" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="images/dentiste2.avif" type="image/avif" fetchpriority="high">
 
 <link rel="stylesheet" href="css/styles.css">
 
@@ -121,31 +121,128 @@
 
 <main id="main">
 
-<section class="hero" aria-label="Introduction">
+<section class="hero hero--v2" aria-label="Introduction">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__mesh"></div>
+    <svg class="hero__deco hero__deco--1" viewBox="0 0 100 100" fill="none">
+      <path d="M50 12 C30 12 18 28 22 50 C25 65 35 78 50 88 C65 78 75 65 78 50 C82 28 70 12 50 12 Z" fill="currentColor" opacity="0.08"/>
+    </svg>
+    <svg class="hero__deco hero__deco--2" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="0.6" stroke-dasharray="2 4" opacity="0.4"/>
+      <circle cx="50" cy="50" r="26" stroke="currentColor" stroke-width="0.6" opacity="0.3"/>
+    </svg>
+  </div>
+
   <div class="container hero__inner">
     <div class="hero__copy">
-      <span class="hero__badge">Bilingual family practice · Montreal</span>
+      <span class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Bilingual family practice · Montreal
+      </span>
       <h1 class="hero__title">
-        A <span class="accent">gentle</span> dentistry,<br>transparent, at your <span class="accent">pace</span>.
+        A <span class="accent">gentle</span> dentistry,<br>
+        transparent, at your&nbsp;<span class="accent accent--underline">pace</span>.
       </h1>
       <p class="hero__subtitle">
-        At Studio Dentaire Belmont, we take our time. Preventive, cosmetic and emergency care,
-        explained step by step — for you and your whole family.
+        At Studio Dentaire Belmont, we take our time. Preventive, cosmetic and emergency care
+        — explained step by step, for you and your whole family.
       </p>
       <div class="hero__ctas">
-        <a class="btn btn--primary" href="#rdv">
+        <a class="btn btn--primary btn--lg" href="#rdv">
           Book an exam
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a class="btn btn--ghost" href="#services">View services</a>
+        <a class="btn btn--ghost" href="#services">View our care</a>
+      </div>
+
+      <div class="hero__quick">
+        <div class="quick">
+          <div class="quick__stars" aria-label="4.9 out of 5">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.851 1.416 8.264L12 19.771l-7.416 4.094L6 15.601 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.851 1.416 8.264L12 19.771l-7.416 4.094L6 15.601 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.851 1.416 8.264L12 19.771l-7.416 4.094L6 15.601 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.851 1.416 8.264L12 19.771l-7.416 4.094L6 15.601 0 9.75l8.332-1.595z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .587l3.668 7.568L24 9.75l-6 5.851 1.416 8.264L12 19.771l-7.416 4.094L6 15.601 0 9.75l8.332-1.595z"/></svg>
+          </div>
+          <strong>4.9 / 5</strong>
+          <span>· 187 Google reviews</span>
+        </div>
+        <div class="quick quick--alt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2" stroke-linecap="round"/></svg>
+          <strong>Reply within 2h</strong>
+        </div>
       </div>
     </div>
 
-    <div class="hero__media">
-      <picture>
-        <source type="image/webp" srcset="images/optimized/hero.webp?v=2">
-        <img src="images/optimized/hero.jpg?v=2" alt="Bright interior of Studio Dentaire Belmont" width="1920" height="1047" fetchpriority="high">
-      </picture>
+    <div class="hero__bento" aria-hidden="false">
+      <div class="bento bento--main">
+        <img src="images/dentiste2.avif"
+             alt="Clear orthodontic aligner — Invisalign®-type"
+             loading="eager" fetchpriority="high"
+             onerror="this.onerror=null;this.src='images/optimized/outil.jpg';">
+        <div class="bento__shade"></div>
+        <div class="bento__chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2 5 5 .5-3.8 3.4 1.1 5.1L12 13.5 7.7 16l1.1-5.1L5 7.5 10 7z" stroke-linejoin="round"/></svg>
+          2026 Technology
+        </div>
+        <div class="bento__caption">
+          <span class="bento__caption-eyebrow">Clear aligners</span>
+          <span class="bento__caption-title">Discreet aligner, <em>visible results</em></span>
+        </div>
+      </div>
+
+      <div class="bento bento--stat">
+        <span class="bento__num">1500+</span>
+        <span class="bento__label">loyal patients<br>since 2010</span>
+        <svg class="bento__spark" viewBox="0 0 100 40" fill="none" preserveAspectRatio="none">
+          <path d="M0 32 Q15 25 25 22 T50 14 T75 8 T100 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <path d="M0 32 Q15 25 25 22 T50 14 T75 8 T100 4 L100 40 L0 40 Z" fill="currentColor" opacity="0.12"/>
+        </svg>
+      </div>
+
+      <div class="bento bento--glass">
+        <div class="bento__pulse" aria-hidden="true"></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <strong>24/7</strong>
+        <span>Dental emergencies</span>
+      </div>
+
+      <div class="bento bento--mini bento--promise">
+        <span class="promise__eyebrow">Our commitment</span>
+        <ul class="promise-list">
+          <li class="promise-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Detailed quote <em>before treatment</em></span>
+          </li>
+          <li class="promise-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Direct billing <em>27 insurers</em></span>
+          </li>
+          <li class="promise-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>RAMQ kids <em>≤ 10 yrs</em></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Pain-free</span><span class="marquee__dot">●</span>
+      <span>Quote before treatment</span><span class="marquee__dot">●</span>
+      <span>3D Cone Beam scanner</span><span class="marquee__dot">●</span>
+      <span>Wand® anesthesia</span><span class="marquee__dot">●</span>
+      <span>Direct insurance billing</span><span class="marquee__dot">●</span>
+      <span>RAMQ kids ≤ 10</span><span class="marquee__dot">●</span>
+      <span>Bilingual EN · FR · AR · ES</span><span class="marquee__dot">●</span>
+      <span>Pain-free</span><span class="marquee__dot">●</span>
+      <span>Quote before treatment</span><span class="marquee__dot">●</span>
+      <span>3D Cone Beam scanner</span><span class="marquee__dot">●</span>
+      <span>Wand® anesthesia</span><span class="marquee__dot">●</span>
+      <span>Direct insurance billing</span><span class="marquee__dot">●</span>
+      <span>RAMQ kids ≤ 10</span><span class="marquee__dot">●</span>
+      <span>Bilingual EN · FR · AR · ES</span><span class="marquee__dot">●</span>
     </div>
   </div>
 </section>
@@ -187,61 +284,79 @@
 
     <div class="services__grid">
       <article class="service">
+        <span class="service__category">Preventive</span>
         <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4-7-11a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 7-7 11-7 11z"/><path d="M9 11c.5 1 1.5 1.5 3 1.5s2.5-.5 3-1.5"/></svg></div>
-        <h3 class="service__title">Exam & cleaning</h3>
+        <h3 class="service__title">Exam &amp; cleaning</h3>
         <p class="service__desc">Full check-up, scaling, polishing, hygiene tips. Recommended every 6 months.</p>
-        <div class="service__price">From $95</div>
+        <a class="service__link" href="#tarifs">View pricing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </article>
 
       <article class="service">
+        <span class="service__category">Cosmetic</span>
         <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/><path d="M8 8l1 1M16 8l-1 1M8 16l1-1M16 16l-1-1"/></svg></div>
         <h3 class="service__title">Whitening</h3>
         <p class="service__desc">In-office or take-home. Visible results from the first session, safely.</p>
-        <div class="service__price">From $350</div>
+        <a class="service__link" href="#tarifs">View pricing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </article>
 
       <article class="service">
+        <span class="service__category">Restorative</span>
         <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M5 8h14M4 14h16"/><circle cx="12" cy="11" r="2"/></svg></div>
         <h3 class="service__title">Dental implants</h3>
         <p class="service__desc">Long-lasting solution to replace one or several teeth. Personalized treatment plan.</p>
-        <div class="service__price">From $2,800</div>
+        <a class="service__link" href="#tarifs">View pricing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </article>
 
       <article class="service">
+        <span class="service__category">Orthodontics</span>
         <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h18M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
         <h3 class="service__title">Clear aligners</h3>
         <p class="service__desc">Transparent trays (Invisalign®-type). Discreet, comfortable, removable.</p>
-        <div class="service__price">From $4,200</div>
+        <a class="service__link" href="#tarifs">View pricing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </article>
 
       <article class="service">
+        <span class="service__category">Cosmetic</span>
         <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <h3 class="service__title">Veneers</h3>
         <p class="service__desc">Reshape the form and tone of your smile with thin ceramic veneers.</p>
-        <div class="service__price">From $950 / tooth</div>
+        <a class="service__link" href="#tarifs">View pricing <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </article>
 
       <article class="service">
+        <span class="service__category service__category--ramq">Pediatric · RAMQ</span>
         <div class="service__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></div>
         <h3 class="service__title">Pediatric care</h3>
         <p class="service__desc">Playful, reassuring approach. Free first visit. Covered by RAMQ up to age 10.</p>
-        <div class="service__price">RAMQ · No fees</div>
+        <a class="service__link" href="#tarifs">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </article>
     </div>
   </div>
 </section>
 
-<section class="team" id="equipe">
+<section class="team team--v2" id="equipe">
   <div class="container">
     <div class="section-head section-head--center">
       <span class="section-eyebrow">Our team</span>
-      <h2 class="section-title">Professionals who <em>take their time</em>.</h2>
-      <p class="section-lede">Four committed practitioners trained in modern dentistry, who speak your language.</p>
+      <h2 class="section-title">Four practitioners who <em>take their time</em>.</h2>
+      <p class="section-lede">Committed, trained in modern dentistry, and they speak your language.</p>
     </div>
 
     <div class="team__grid">
-      <article class="member">
-        <div class="member__photo"><picture><source type="image/webp" srcset="images/optimized/dentiste-femme.webp"><img src="images/optimized/dentiste-femme.jpg" alt="Dr. Camille Lavoie, general dentist" width="800" height="800" loading="lazy"></picture></div>
+
+      <article class="member member--v2" style="--mc1:#0F2A3F;--mc2:#1E4762;">
+        <div class="member__avatar">
+          <svg class="member__pattern" viewBox="0 0 200 200" aria-hidden="true">
+            <defs>
+              <pattern id="dotsCLen" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.6" fill="#FFFFFF"/>
+              </pattern>
+            </defs>
+            <rect width="200" height="200" fill="url(#dotsCLen)" opacity="0.18"/>
+          </svg>
+          <span class="member__monogram" aria-hidden="true">CL</span>
+          <span class="member__chip">15 yrs · ⛑</span>
+        </div>
         <div class="member__body">
           <h3 class="member__name">Dr. Camille Lavoie</h3>
           <p class="member__role">General dentist · Founder</p>
@@ -250,18 +365,38 @@
         </div>
       </article>
 
-      <article class="member">
-        <div class="member__photo"><picture><source type="image/webp" srcset="images/optimized/dentiste-homme.webp"><img src="images/optimized/dentiste-homme.jpg" alt="Dr. Karim Nouri, implantologist" width="800" height="800" loading="lazy"></picture></div>
+      <article class="member member--v2" style="--mc1:#A8895C;--mc2:#C9A876;">
+        <div class="member__avatar">
+          <svg class="member__pattern" viewBox="0 0 200 200" aria-hidden="true">
+            <g stroke="#FFFFFF" stroke-width="0.8" fill="none" opacity="0.22">
+              <path d="M0 40 L200 40"/><path d="M0 80 L200 80"/><path d="M0 120 L200 120"/><path d="M0 160 L200 160"/>
+              <path d="M40 0 L40 200"/><path d="M80 0 L80 200"/><path d="M120 0 L120 200"/><path d="M160 0 L160 200"/>
+            </g>
+          </svg>
+          <span class="member__monogram" aria-hidden="true">KN</span>
+          <span class="member__chip">12 yrs · 🦷</span>
+        </div>
         <div class="member__body">
           <h3 class="member__name">Dr. Karim Nouri</h3>
-          <p class="member__role">Implantologist & restorative</p>
+          <p class="member__role">Implantologist &amp; restorative</p>
           <p class="member__bio">12 years in implantology and complex reconstructions. Trained at McGill and Geneva.</p>
           <div class="member__lang"><span>FR</span><span>EN</span><span>AR</span></div>
         </div>
       </article>
 
-      <article class="member">
-        <div class="member__photo"><picture><source type="image/webp" srcset="images/optimized/hygieniste.webp"><img src="images/optimized/hygieniste.jpg" alt="Marie-Ève Tremblay, dental hygienist" width="800" height="800" loading="lazy"></picture></div>
+      <article class="member member--v2" style="--mc1:#4FAA90;--mc2:#7FD1B9;">
+        <div class="member__avatar">
+          <svg class="member__pattern" viewBox="0 0 200 200" aria-hidden="true">
+            <g fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.22">
+              <circle cx="100" cy="100" r="30"/>
+              <circle cx="100" cy="100" r="55"/>
+              <circle cx="100" cy="100" r="80"/>
+              <circle cx="100" cy="100" r="105"/>
+            </g>
+          </svg>
+          <span class="member__monogram" aria-hidden="true">MÈ</span>
+          <span class="member__chip">8 yrs · ✨</span>
+        </div>
         <div class="member__body">
           <h3 class="member__name">Marie-Ève Tremblay</h3>
           <p class="member__role">Dental hygienist</p>
@@ -270,15 +405,31 @@
         </div>
       </article>
 
-      <article class="member">
-        <div class="member__photo"><picture><source type="image/webp" srcset="images/optimized/assistante.webp"><img src="images/optimized/assistante.jpg" alt="Sofia Ramirez, dental assistant" width="800" height="800" loading="lazy"></picture></div>
+      <article class="member member--v2" style="--mc1:#091A2A;--mc2:#0F2A3F;">
+        <div class="member__avatar">
+          <svg class="member__pattern" viewBox="0 0 200 200" aria-hidden="true">
+            <g fill="#FFFFFF" opacity="0.16">
+              <path d="M30 30 l8 8 -8 8 -8 -8z"/>
+              <path d="M90 60 l8 8 -8 8 -8 -8z"/>
+              <path d="M150 30 l8 8 -8 8 -8 -8z"/>
+              <path d="M50 110 l8 8 -8 8 -8 -8z"/>
+              <path d="M120 130 l8 8 -8 8 -8 -8z"/>
+              <path d="M170 100 l8 8 -8 8 -8 -8z"/>
+              <path d="M30 170 l8 8 -8 8 -8 -8z"/>
+              <path d="M100 170 l8 8 -8 8 -8 -8z"/>
+            </g>
+          </svg>
+          <span class="member__monogram" aria-hidden="true">SR</span>
+          <span class="member__chip">5 yrs · ☎</span>
+        </div>
         <div class="member__body">
           <h3 class="member__name">Sofia Ramirez</h3>
-          <p class="member__role">Dental assistant & coordinator</p>
+          <p class="member__role">Dental assistant &amp; coordinator</p>
           <p class="member__bio">Your first point of contact at the clinic. Makes sure every visit goes smoothly.</p>
           <div class="member__lang"><span>FR</span><span>EN</span><span>ES</span></div>
         </div>
       </article>
+
     </div>
   </div>
 </section>
@@ -291,7 +442,16 @@
     </div>
 
     <div class="pillar">
-      <div class="pillar__media"><picture><source type="image/webp" srcset="images/optimized/outil.webp"><img src="images/optimized/outil.jpg" alt="Gentle dental care" width="1200" height="654" loading="lazy"></picture></div>
+      <div class="pillar__media">
+        <img src="images/image-dentiste.avif"
+             alt="Studio Belmont practitioner during a procedure"
+             width="1200" height="800" loading="lazy"
+             onerror="this.onerror=null;this.src='images/optimized/outil.jpg';">
+        <div class="pillar__media-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4-7-11a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 7-7 11-7 11z" stroke-linejoin="round"/></svg>
+          Wand® anesthesia
+        </div>
+      </div>
       <div class="pillar__content">
         <span class="pillar__num">01</span>
         <h3 class="pillar__title">Gentleness, no pain.</h3>
@@ -305,7 +465,16 @@
     </div>
 
     <div class="pillar pillar--reverse">
-      <div class="pillar__media"><picture><source type="image/webp" srcset="images/optimized/scan.webp"><img src="images/optimized/scan.jpg" alt="Modern 3D dental scanner" width="1200" height="654" loading="lazy"></picture></div>
+      <div class="pillar__media">
+        <img src="images/clinique.avif"
+             alt="Fully equipped treatment room at Studio Belmont"
+             width="1200" height="800" loading="lazy"
+             onerror="this.onerror=null;this.src='images/optimized/scan.jpg';">
+        <div class="pillar__media-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke-linecap="round"/></svg>
+          Cone Beam 3D
+        </div>
+      </div>
       <div class="pillar__content">
         <span class="pillar__num">02</span>
         <h3 class="pillar__title">Cutting-edge technology.</h3>
@@ -319,7 +488,16 @@
     </div>
 
     <div class="pillar">
-      <div class="pillar__media"><picture><source type="image/webp" srcset="images/optimized/reception.webp"><img src="images/optimized/reception.jpg" alt="Welcoming reception area" width="1600" height="872" loading="lazy"></picture></div>
+      <div class="pillar__media">
+        <img src="images/clinique2.avif"
+             alt="Bright, transparent space at Studio Belmont"
+             width="1200" height="800" loading="lazy"
+             onerror="this.onerror=null;this.src='images/optimized/reception.jpg';">
+        <div class="pillar__media-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M7 15h6"/></svg>
+          27 insurers
+        </div>
+      </div>
       <div class="pillar__content">
         <span class="pillar__num">03</span>
         <h3 class="pillar__title">Total transparency.</h3>
@@ -547,32 +725,32 @@
 
       <div class="contact__map" aria-label="Office location map">
         <svg viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized office map">
-          <rect width="400" height="280" fill="#F1EBE0"/>
-          <path d="M-10 150 L410 150" stroke="#E5DDD0" stroke-width="22" fill="none"/>
-          <path d="M180 -10 L180 290" stroke="#E5DDD0" stroke-width="22" fill="none"/>
-          <path d="M-10 60 L410 60" stroke="#EDE5D6" stroke-width="14" fill="none"/>
-          <path d="M-10 230 L410 230" stroke="#EDE5D6" stroke-width="14" fill="none"/>
-          <path d="M80 -10 L80 290" stroke="#EDE5D6" stroke-width="12" fill="none"/>
-          <path d="M310 -10 L310 290" stroke="#EDE5D6" stroke-width="12" fill="none"/>
-          <text x="200" y="146" font-family="Inter, sans-serif" font-size="9" fill="#9C9387" font-weight="500">Mont-Royal Avenue</text>
-          <text x="184" y="120" font-family="Inter, sans-serif" font-size="8" fill="#9C9387" transform="rotate(-90 184 120)">Marquette Street</text>
-          <rect x="20" y="180" width="50" height="40" rx="6" fill="#E8EFE9"/>
-          <text x="45" y="204" font-family="Inter, sans-serif" font-size="8" fill="#3D5A4E" text-anchor="middle" font-weight="600">Park</text>
-          <circle cx="320" cy="155" r="10" fill="#3D5A4E"/>
-          <text x="320" y="159" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FCFAF6" text-anchor="middle">M</text>
-          <text x="320" y="180" font-family="Inter, sans-serif" font-size="9" fill="#6B6258" text-anchor="middle" font-weight="600">Mont-Royal</text>
+          <rect width="400" height="280" fill="#F1F4F2"/>
+          <path d="M-10 150 L410 150" stroke="#E2E8EC" stroke-width="22" fill="none"/>
+          <path d="M180 -10 L180 290" stroke="#E2E8EC" stroke-width="22" fill="none"/>
+          <path d="M-10 60 L410 60" stroke="#EDF1F4" stroke-width="14" fill="none"/>
+          <path d="M-10 230 L410 230" stroke="#EDF1F4" stroke-width="14" fill="none"/>
+          <path d="M80 -10 L80 290" stroke="#EDF1F4" stroke-width="12" fill="none"/>
+          <path d="M310 -10 L310 290" stroke="#EDF1F4" stroke-width="12" fill="none"/>
+          <text x="200" y="146" font-family="Inter, sans-serif" font-size="9" fill="#8A99A8" font-weight="500">Mont-Royal Avenue</text>
+          <text x="184" y="120" font-family="Inter, sans-serif" font-size="8" fill="#8A99A8" transform="rotate(-90 184 120)">Marquette Street</text>
+          <rect x="20" y="180" width="50" height="40" rx="6" fill="#D8F0E7"/>
+          <text x="45" y="204" font-family="Inter, sans-serif" font-size="8" fill="#0F2A3F" text-anchor="middle" font-weight="600">Park</text>
+          <circle cx="320" cy="155" r="10" fill="#0F2A3F"/>
+          <text x="320" y="159" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">M</text>
+          <text x="320" y="180" font-family="Inter, sans-serif" font-size="9" fill="#3D4D5C" text-anchor="middle" font-weight="600">Mont-Royal</text>
           <g transform="translate(195, 130)">
-            <path d="M0 0 C-12 0 -22 10 -22 22 C-22 38 0 60 0 60 C0 60 22 38 22 22 C22 10 12 0 0 0 Z" fill="#D08770" opacity="0.22"/>
-            <path d="M0 -8 C-10 -8 -18 0 -18 10 C-18 22 0 38 0 38 C0 38 18 22 18 10 C18 0 10 -8 0 -8 Z" fill="#D08770"/>
-            <circle cx="0" cy="10" r="6" fill="#FCFAF6"/>
+            <path d="M0 0 C-12 0 -22 10 -22 22 C-22 38 0 60 0 60 C0 60 22 38 22 22 C22 10 12 0 0 0 Z" fill="#C9A876" opacity="0.22"/>
+            <path d="M0 -8 C-10 -8 -18 0 -18 10 C-18 22 0 38 0 38 C0 38 18 22 18 10 C18 0 10 -8 0 -8 Z" fill="#C9A876"/>
+            <circle cx="0" cy="10" r="6" fill="#FFFFFF"/>
           </g>
-          <text x="195" y="103" font-family="Fraunces, serif" font-size="13" font-weight="500" fill="#2A2520" text-anchor="middle">Studio Belmont</text>
-          <text x="195" y="118" font-family="Inter, sans-serif" font-size="9" fill="#6B6258" text-anchor="middle">1842 Mont-Royal Ave E</text>
+          <text x="195" y="103" font-family="Fraunces, serif" font-size="13" font-weight="500" fill="#0B1620" text-anchor="middle">Studio Belmont</text>
+          <text x="195" y="118" font-family="Inter, sans-serif" font-size="9" fill="#3D4D5C" text-anchor="middle">1842 Mont-Royal Ave E</text>
         </svg>
         <div class="contact__map-legend">
-          <span><i style="background:#D08770"></i> Office</span>
-          <span><i style="background:#3D5A4E"></i> Mont-Royal Metro</span>
-          <span><i style="background:#E8EFE9;border:1px solid #3D5A4E"></i> Park</span>
+          <span><i style="background:#C9A876"></i> Office</span>
+          <span><i style="background:#0F2A3F"></i> Mont-Royal Metro</span>
+          <span><i style="background:#D8F0E7;border:1px solid #0F2A3F"></i> Park</span>
         </div>
       </div>
     </div>
