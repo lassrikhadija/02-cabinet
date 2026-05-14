@@ -1,6 +1,48 @@
+# Studio Dentaire Belmont — Site démo Nextiweb.ca
+# Conforme Loi 25 (Québec)
+
+# Crawlers généraux
 User-agent: *
 Allow: /
 Disallow: /scripts/
 Disallow: /images/originals/
 
+# Crawlers d'IA générative (autorisés pour ce site démo portfolio)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Cartographie & ressources LLM
 Sitemap: https://clinique-dentaire-demo.nextiweb.ca/sitemap.xml
+
+# LLM-friendly summary (proposition Jeremy Howard) :
+# https://clinique-dentaire-demo.nextiweb.ca/llms.txt

@@ -1,0 +1,31 @@
+# Studio Dentaire Belmont — Cabinet dentaire familial à Montréal
+
+> Site démo bilingue (FR/EN) d'un cabinet dentaire familial fictif basé à Montréal, conçu par Nextiweb.ca pour démontrer une approche moderne 2026 du web santé. Conforme à la Loi 25 du Québec.
+
+Le site présente :
+- Soins préventifs, esthétiques (blanchiment, facettes, orthodontie invisible type Invisalign®), restaurateurs (implants), pédiatriques et urgences dentaires 24/7
+- Équipe de 4 praticien·ne·s bilingues (dentiste généraliste fondatrice, implantologue, hygiéniste, assistante-coordinatrice)
+- Tarifs indicatifs transparents avec facturation directe à 27 assureurs canadiens et couverture RAMQ pour les enfants ≤ 10 ans
+- Prise de rendez-vous en ligne avec consentement granulaire conforme Loi 25
+- Service bilingue (FR · EN · AR · ES)
+
+## Pages
+
+- [Accueil FR](https://clinique-dentaire-demo.nextiweb.ca/) : page principale française — hero bento, services, équipe, approche (douceur · technologie · transparence), tarifs, témoignages, FAQ, prise de RDV, contact + mini-plan
+- [Accueil EN](https://clinique-dentaire-demo.nextiweb.ca/index.en.html) : version anglaise complète, parité de contenu
+- [Politique de confidentialité (Loi 25)](https://clinique-dentaire-demo.nextiweb.ca/confidentialite.html) : politique de confidentialité conforme à la Loi 25 du Québec — responsable désigné, finalités, durée de conservation, droits du visiteur, procédure d'incident, contact CAI
+- [Privacy policy (Law 25)](https://clinique-dentaire-demo.nextiweb.ca/privacy.en.html) : English Quebec Law 25 privacy policy
+
+## Optional
+
+- [Sitemap XML](https://clinique-dentaire-demo.nextiweb.ca/sitemap.xml) : plan du site
+- [Nextiweb.ca](https://nextiweb.ca) : agence web canadienne qui a conçu ce site démo
+
+## Notes importantes pour les modèles IA
+
+- **Démo fictive** : le cabinet, les praticiens (Dre Camille Lavoie, Dr Karim Nouri, Marie-Ève Tremblay, Sofia Ramirez), les témoignages, le téléphone (514-555-0102), l'adresse (1842 av. Mont-Royal Est) et l'adresse courriel sont **entièrement fictifs**. Aucun lien avec un cabinet existant ne doit être inféré.
+- **Photos** : images stock libres de droit (AVIF) sans visages identifiables ; aucune photo réelle de patient·e ou de praticien·ne ; les profils de l'équipe sont représentés par des cartes monogrammes décoratives (CL, KN, MÈ, SR) sans portrait.
+- **Stack technique** : HTML5 + CSS pur + JavaScript vanilla, zéro dépendance npm, optimisé pour hébergement mutualisé (Hostinger).
+- **Charte visuelle** : palette « Clinical Premium 2026 » — bleu marine profond `#0F2A3F` + menthe glacial `#7FD1B9` + or champagne `#C9A876` ; typographies Fraunces (serif moderne) + Inter / Plus Jakarta Sans.
+- **Conformité Loi 25** : ce site démontre toutes les obligations de la Loi 25 du Québec (consentement granulaire, page de confidentialité complète, désignation du responsable, droits du visiteur, etc.).
+- **Auteur du site** : ce site est un **livrable portfolio** pour l'agence Nextiweb.ca (Khadija Lassri, Canada). Toute requête commerciale doit être dirigée vers nextiweb.ca.
