@@ -984,6 +984,191 @@ section { padding: var(--sp-12) 0; scroll-margin-top: var(--header-h); }
 }
 .form__submit { margin-top: var(--sp-4); width: 100%; }
 
+/* ----- Consentement Loi 25 ----- */
+.form__consent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  margin-top: var(--sp-3);
+  padding: var(--sp-4);
+  background: var(--c-primary-light);
+  border-radius: var(--radius);
+  border: 1px solid var(--c-border);
+}
+.consent__row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  cursor: pointer;
+  font-family: var(--f-body);
+  font-size: var(--fs-sm);
+  color: var(--c-text);
+  line-height: 1.5;
+}
+.consent__row input[type="checkbox"] {
+  flex-shrink: 0;
+  margin-top: 0.2em;
+  width: 18px; height: 18px;
+  accent-color: var(--c-primary);
+  cursor: pointer;
+}
+.consent__row strong { font-weight: 600; }
+.form__legal {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-4);
+  border-top: 1px dashed var(--c-border);
+  font-size: var(--fs-xs);
+  color: var(--c-text-soft);
+  line-height: 1.55;
+}
+.form__legal svg {
+  flex-shrink: 0;
+  width: 18px; height: 18px;
+  color: var(--c-secondary-dark);
+  margin-top: 1px;
+}
+.form__legal strong { color: var(--c-primary); font-weight: 700; }
+.form__legal a {
+  color: var(--c-primary);
+  text-decoration: underline;
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+.form__legal a:hover { color: var(--c-secondary-dark); }
+
+/* ----- Page légale (confidentialite.html / privacy.en.html) ----- */
+.legal {
+  padding-top: calc(var(--header-h) + var(--sp-10));
+  padding-bottom: var(--sp-12);
+  background: var(--c-bg);
+  min-height: 100vh;
+}
+.legal__head {
+  text-align: center;
+  margin-bottom: var(--sp-10);
+  padding-bottom: var(--sp-8);
+  border-bottom: 1px solid var(--c-border);
+}
+.legal__title {
+  font-family: var(--f-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: var(--c-text);
+  margin: var(--sp-3) 0 var(--sp-4);
+  line-height: 1.05;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+}
+.legal__title em {
+  font-style: italic;
+  font-weight: 300;
+  background: linear-gradient(120deg, var(--c-tertiary-dark) 0%, var(--c-tertiary) 50%, #E0BC8A 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+.legal__lede {
+  font-size: var(--fs-md);
+  color: var(--c-text-soft);
+  max-width: 640px;
+  margin: 0 auto var(--sp-5);
+  line-height: 1.65;
+}
+.legal__updated {
+  display: inline-block;
+  font-size: var(--fs-xs);
+  color: var(--c-text-muted);
+  background: var(--c-surface-alt);
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+}
+.legal__article {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-8);
+}
+.legal__article section {
+  scroll-margin-top: var(--header-h);
+}
+.legal__article h2 {
+  font-family: var(--f-display);
+  font-size: var(--fs-xl);
+  font-weight: 500;
+  color: var(--c-primary);
+  margin-bottom: var(--sp-3);
+  letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+}
+.legal__article p,
+.legal__article ul {
+  color: var(--c-text-soft);
+  line-height: 1.7;
+  font-size: var(--fs-base);
+  margin-bottom: var(--sp-3);
+}
+.legal__article ul {
+  padding-left: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+.legal__article ul li::marker { color: var(--c-secondary-dark); }
+.legal__article strong { color: var(--c-text); font-weight: 600; }
+.legal__article a { color: var(--c-primary); text-decoration: underline; }
+.legal__article a:hover { color: var(--c-secondary-dark); }
+.legal__card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-left: 4px solid var(--c-secondary);
+  border-radius: var(--radius);
+  padding: var(--sp-5);
+  margin: var(--sp-4) 0;
+  line-height: 1.8;
+  color: var(--c-text);
+  font-size: var(--fs-sm);
+}
+.legal__note {
+  background: var(--c-tertiary-light);
+  border-left: 4px solid var(--c-tertiary);
+  padding: var(--sp-4) var(--sp-5);
+  border-radius: var(--radius);
+  font-size: var(--fs-sm);
+  color: var(--c-text);
+}
+.legal__footer-note {
+  font-size: var(--fs-sm);
+  color: var(--c-text-muted);
+  font-style: italic;
+  padding: var(--sp-5) 0;
+  border-top: 1px dashed var(--c-border);
+  margin-top: var(--sp-6);
+}
+.legal__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--sp-10);
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  background: var(--c-surface);
+  border: 1.5px solid var(--c-primary);
+  color: var(--c-primary);
+  font-family: var(--f-sans);
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  transition: gap var(--t-fast), background var(--t-fast), color var(--t-fast);
+}
+.legal__back:hover {
+  gap: 14px;
+  background: var(--c-primary);
+  color: white;
+}
+.legal__back svg { width: 18px; height: 18px; }
+
 /* Slots calendrier visuel */
 .slots {
   background: var(--c-surface-alt);

@@ -244,6 +244,10 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <span>RAMQ enfants <em>≤ 10 ans</em></span>
           </li>
+          <li class="promise-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <span>Données protégées <em>Loi 25 (Québec)</em></span>
+          </li>
         </ul>
       </div>
     </div>
@@ -828,12 +832,30 @@
           </div>
         </div>
 
+        <div class="form__consent">
+          <label class="consent__row">
+            <input type="checkbox" id="consent-rdv" name="consent" required>
+            <span>
+              J'autorise le Studio Dentaire Belmont à <strong>collecter et utiliser</strong> mes renseignements
+              uniquement pour le traitement de cette demande de rendez-vous. <span class="req">*</span>
+            </span>
+          </label>
+          <label class="consent__row">
+            <input type="checkbox" id="consent-news" name="consent_news">
+            <span>
+              J'accepte de recevoir des <strong>rappels de RDV et conseils prévention</strong> par courriel (optionnel, retrait en 1 clic).
+            </span>
+          </label>
+        </div>
+
         <button type="submit" class="btn btn--primary form__submit">
           Envoyer ma demande
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <p class="text-muted" style="margin-top:var(--sp-3);font-size:var(--fs-xs);">
-          En soumettant, vous acceptez d'être contacté·e par notre équipe. Vos données ne sont jamais partagées.
+        <p class="form__legal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          Données protégées · <strong>Loi&nbsp;25 (Québec)</strong> · Conservation max 5&nbsp;ans après dernière visite.
+          <a href="confidentialite.html">Politique de confidentialité</a>
         </p>
       </form>
 
@@ -1068,6 +1090,7 @@
           <li><a href="#approche">Approche</a></li>
           <li><a href="#tarifs">Tarifs</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="confidentialite.html">Confidentialité · Loi 25</a></li>
         </ul>
       </div>
 

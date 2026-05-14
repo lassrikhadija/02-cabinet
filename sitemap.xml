@@ -22,4 +22,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://clinique-dentaire-demo.nextiweb.ca/"/>
   </url>
 
+  <url>
+    <loc>https://clinique-dentaire-demo.nextiweb.ca/confidentialite.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://clinique-dentaire-demo.nextiweb.ca/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://clinique-dentaire-demo.nextiweb.ca/privacy.en.html"/>
+  </url>
+
+  <url>
+    <loc>https://clinique-dentaire-demo.nextiweb.ca/privacy.en.html</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://clinique-dentaire-demo.nextiweb.ca/confidentialite.html"/>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://clinique-dentaire-demo.nextiweb.ca/privacy.en.html"/>
+  </url>
+
 </urlset>
