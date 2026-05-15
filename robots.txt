@@ -42,7 +42,7 @@ User-agent: Bytespider
 Allow: /
 
 # Cartographie & ressources LLM
-Sitemap: https://soins-services.nextiwebsolution.com/sitemap.xml
+Sitemap: https://soins-services.nextiwebstudio.ca/sitemap.xml
 
 # LLM-friendly summary (proposition Jeremy Howard) :
-# https://soins-services.nextiwebsolution.com/llms.txt
+# https://soins-services.nextiwebstudio.ca/llms.txt
