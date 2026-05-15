@@ -127,7 +127,7 @@ Ouvrir <http://localhost:8000>.
 
 ## Déploiement Hostinger
 
-Sous-domaine cible : `clinique-dentaire-demo.nextiweb.ca`
+Sous-domaine cible : `soins-services.nextiwebsolution.com`
 
 1. Créer le sous-domaine dans hPanel Hostinger
 2. Uploader le contenu du dossier (sauf `images/originals/`, `scripts/`, `.git/`) via FTP ou Git

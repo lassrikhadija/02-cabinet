@@ -11,14 +11,14 @@ Le site présente :
 
 ## Pages
 
-- [Accueil FR](https://clinique-dentaire-demo.nextiweb.ca/) : page principale française — hero bento, services, équipe, approche (douceur · technologie · transparence), tarifs, témoignages, FAQ, prise de RDV, contact + mini-plan
-- [Accueil EN](https://clinique-dentaire-demo.nextiweb.ca/index.en.html) : version anglaise complète, parité de contenu
-- [Politique de confidentialité (Loi 25)](https://clinique-dentaire-demo.nextiweb.ca/confidentialite.html) : politique de confidentialité conforme à la Loi 25 du Québec — responsable désigné, finalités, durée de conservation, droits du visiteur, procédure d'incident, contact CAI
-- [Privacy policy (Law 25)](https://clinique-dentaire-demo.nextiweb.ca/privacy.en.html) : English Quebec Law 25 privacy policy
+- [Accueil FR](https://soins-services.nextiwebsolution.com/) : page principale française — hero bento, services, équipe, approche (douceur · technologie · transparence), tarifs, témoignages, FAQ, prise de RDV, contact + mini-plan
+- [Accueil EN](https://soins-services.nextiwebsolution.com/index.en.html) : version anglaise complète, parité de contenu
+- [Politique de confidentialité (Loi 25)](https://soins-services.nextiwebsolution.com/confidentialite.html) : politique de confidentialité conforme à la Loi 25 du Québec — responsable désigné, finalités, durée de conservation, droits du visiteur, procédure d'incident, contact CAI
+- [Privacy policy (Law 25)](https://soins-services.nextiwebsolution.com/privacy.en.html) : English Quebec Law 25 privacy policy
 
 ## Optional
 
-- [Sitemap XML](https://clinique-dentaire-demo.nextiweb.ca/sitemap.xml) : plan du site
+- [Sitemap XML](https://soins-services.nextiwebsolution.com/sitemap.xml) : plan du site
 - [Nextiweb.ca](https://nextiweb.ca) : agence web canadienne qui a conçu ce site démo
 
 ## Notes importantes pour les modèles IA
