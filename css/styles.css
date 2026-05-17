@@ -1586,6 +1586,92 @@ section { padding: var(--sp-12) 0; scroll-margin-top: var(--header-h); }
   transform: translateY(-2px);
 }
 
+/* =====================================================
+   ============  FIX RESPONSIVE MOBILE  =================
+   Booking / formulaire RDV / créneaux
+   ===================================================== */
+@media (max-width: 640px) {
+  /* Conteneurs : moins de padding */
+  .booking__form {
+    padding: var(--sp-5) var(--sp-4);
+    border-radius: var(--radius-lg);
+  }
+  .slots {
+    padding: var(--sp-5) var(--sp-4);
+    border-radius: var(--radius-lg);
+  }
+
+  /* Champs plus compacts mais lisibles */
+  .form__group input,
+  .form__group select,
+  .form__group textarea {
+    padding: 0.7rem 0.85rem;
+    font-size: 0.95rem;
+  }
+  .form__row { gap: var(--sp-4); margin-bottom: var(--sp-4); }
+
+  /* Bloc consentement Loi 25 */
+  .form__consent {
+    padding: var(--sp-3);
+    gap: var(--sp-2);
+  }
+  .consent__row {
+    font-size: var(--fs-xs);
+    line-height: 1.45;
+    gap: 0.5rem;
+  }
+  .consent__row input[type="checkbox"] {
+    width: 16px; height: 16px;
+  }
+  .form__legal {
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    line-height: 1.5;
+  }
+  .form__legal a { display: inline-block; margin-top: 0.25rem; }
+
+  /* Bouton submit */
+  .form__submit {
+    padding: 0.85rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* CRÉNEAUX — adapter la grille */
+  .slots__title { font-size: var(--fs-md); }
+  .slots__sub { font-size: var(--fs-xs); margin-bottom: var(--sp-4); }
+  .slots__week {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    margin-bottom: var(--sp-3);
+  }
+  .slot-day { padding: var(--sp-1); }
+  .slot-day__name { font-size: 0.6rem; }
+  .slot-day__num { font-size: var(--fs-sm); }
+
+  /* Créneaux horaires : 3 colonnes au lieu de auto-fill (plus compact, plus lisible) */
+  .slots__hours {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-2);
+  }
+  .slot {
+    padding: 0.55rem 0.3rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    border-width: 1px;
+  }
+
+  /* Évite que les blobs décoratifs débordent et coupent la grille */
+  .booking::before { width: 280px; height: 280px; top: -100px; right: -100px; }
+  .booking::after  { width: 240px; height: 240px; bottom: -80px; left: -80px; }
+}
+
+/* Très petits écrans (≤ 380px) */
+@media (max-width: 380px) {
+  .slots__hours { grid-template-columns: repeat(2, 1fr); }
+  .booking__form, .slots { padding: var(--sp-4) var(--sp-3); }
+  .form__row--2 { grid-template-columns: 1fr; }
+}
+
 /* ---------- Footer ---------- */
 .footer {
   background: var(--c-primary-dark);
