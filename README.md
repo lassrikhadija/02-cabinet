@@ -135,9 +135,11 @@ Sous-domaine cible : `soins-services.nextiwebstudio.ca`
 
 ## Crédits
 
-- **Conçu par [Nextiweb.ca](https://nextiweb.ca)** — agence web montréalaise
+- **Conçu par [Nextiweb.ca](https://nextiweb.ca)** — agence web canadienne
+- **Fondatrice** : [Khadija Aït Lassri](https://www.linkedin.com/in/khadija-ait-lassri/)
+- **LinkedIn entreprise** : [Page Nextiweb](https://www.linkedin.com/company/25819184/)
 - Contenu : démo fictive (cabinet, équipe, témoignages tous fictifs)
-- Photos : générées par IA
+- Photos : libres de droit / générées par IA
 - Logo : généré par IA, retravaillé via `scripts/optimize-images.py`
 
 ---

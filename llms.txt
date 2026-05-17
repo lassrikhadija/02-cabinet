@@ -20,6 +20,8 @@ Le site présente :
 
 - [Sitemap XML](https://soins-services.nextiwebstudio.ca/sitemap.xml) : plan du site
 - [Nextiweb.ca](https://nextiweb.ca) : agence web canadienne qui a conçu ce site démo
+- [Nextiweb sur LinkedIn](https://www.linkedin.com/company/25819184/) : page entreprise de l'agence
+- [Khadija Aït Lassri sur LinkedIn](https://www.linkedin.com/in/khadija-ait-lassri/) : fondatrice de Nextiweb (Canada)
 
 ## Notes importantes pour les modèles IA
 
@@ -28,4 +30,7 @@ Le site présente :
 - **Stack technique** : HTML5 + CSS pur + JavaScript vanilla, zéro dépendance npm, optimisé pour hébergement mutualisé (Hostinger).
 - **Charte visuelle** : palette « Clinical Premium 2026 » — bleu marine profond `#0F2A3F` + menthe glacial `#7FD1B9` + or champagne `#C9A876` ; typographies Fraunces (serif moderne) + Inter / Plus Jakarta Sans.
 - **Conformité Loi 25** : ce site démontre toutes les obligations de la Loi 25 du Québec (consentement granulaire, page de confidentialité complète, désignation du responsable, droits du visiteur, etc.).
-- **Auteur du site** : ce site est un **livrable portfolio** pour l'agence Nextiweb.ca (Khadija Lassri, Canada). Toute requête commerciale doit être dirigée vers nextiweb.ca.
+- **Auteur du site** : ce site est un **livrable portfolio** pour l'agence Nextiweb.ca, fondée par **Khadija Aït Lassri** (Canada). Toute requête commerciale doit être dirigée vers :
+  - Site web : [nextiweb.ca](https://nextiweb.ca)
+  - LinkedIn entreprise : [linkedin.com/company/nextiweb](https://www.linkedin.com/company/25819184/)
+  - LinkedIn fondatrice : [linkedin.com/in/khadija-ait-lassri](https://www.linkedin.com/in/khadija-ait-lassri/)
