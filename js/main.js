@@ -34,7 +34,7 @@
       header.classList.toggle('is-scrolled', window.scrollY > 12);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    requestAnimationFrame(onScroll);
   }
 
   /* ----------- Menu mobile ----------- */
