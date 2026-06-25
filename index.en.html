@@ -93,7 +93,7 @@
 
 <header class="header" id="site-header">
   <div class="container header__inner">
-    <a class="header__brand" href="#" aria-label="Home — Studio Dentaire Belmont">
+    <a class="header__brand" href="/" aria-label="Home — Studio Dentaire Belmont">
       <img src="images/optimized/logo-horizontal.png" alt="Studio Dentaire Belmont — Demo site by Nextiweb, web agency for dental clinics in Montreal" width="200" height="55">
     </a>
 
@@ -183,10 +183,13 @@
 
     <div class="hero__bento" aria-hidden="false">
       <div class="bento bento--main">
-        <img src="images/demo-nextiweb-site-clinique-dentaire-montreal-orthodontie.avif"
-             alt="Clear orthodontic aligner dental clinic Montreal — demo website by Nextiweb, web agency for dentists"
-             loading="eager" fetchpriority="high"
-             onerror="this.onerror=null;this.src='images/optimized/outil.jpg';">
+        <picture>
+          <source srcset="images/demo-nextiweb-site-clinique-dentaire-montreal-orthodontie.avif" type="image/avif">
+          <img src="images/optimized/outil.jpg"
+               alt="Clear orthodontic aligner dental clinic Montreal — demo website by Nextiweb, web agency for dentists"
+               loading="eager" fetchpriority="high"
+               width="800" height="800">
+        </picture>
         <div class="bento__shade"></div>
         <div class="bento__chip">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
@@ -454,10 +457,12 @@
 
     <div class="pillar">
       <div class="pillar__media">
-        <img src="images/demo-nextiweb-agence-web-dentiste-montreal.avif"
-             alt="Dentist during procedure Montreal — demo dental clinic website by Nextiweb, web agency for dentists"
-             width="1200" height="800" loading="lazy"
-             onerror="this.onerror=null;this.src='images/optimized/outil.jpg';">
+        <picture>
+          <source srcset="images/demo-nextiweb-agence-web-dentiste-montreal.avif" type="image/avif">
+          <img src="images/optimized/outil.jpg"
+               alt="Dentist during procedure Montreal — demo dental clinic website by Nextiweb, web agency for dentists"
+               width="1200" height="800" loading="lazy">
+        </picture>
         <div class="pillar__media-tag">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4-7-11a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 7-7 11-7 11z" stroke-linejoin="round"/></svg>
           Wand® anesthesia
@@ -477,10 +482,12 @@
 
     <div class="pillar pillar--reverse">
       <div class="pillar__media">
-        <img src="images/demo-nextiweb-creation-site-web-salle-soins-dentaire-montreal.avif"
-             alt="Dental treatment room Montreal — demo website creation by Nextiweb, web agency for dental clinics"
-             width="1200" height="800" loading="lazy"
-             onerror="this.onerror=null;this.src='images/optimized/scan.jpg';">
+        <picture>
+          <source srcset="images/demo-nextiweb-creation-site-web-salle-soins-dentaire-montreal.avif" type="image/avif">
+          <img src="images/optimized/scan.jpg"
+               alt="Dental treatment room Montreal — demo website creation by Nextiweb, web agency for dental clinics"
+               width="1200" height="800" loading="lazy">
+        </picture>
         <div class="pillar__media-tag">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke-linecap="round"/></svg>
           Cone Beam 3D
@@ -500,10 +507,12 @@
 
     <div class="pillar">
       <div class="pillar__media">
-        <img src="images/demo-nextiweb-site-web-clinique-dentaire-montreal-accueil.avif"
-             alt="Dental clinic reception Montreal — demo website by Nextiweb, web agency for dental clinics"
-             width="1200" height="800" loading="lazy"
-             onerror="this.onerror=null;this.src='images/optimized/reception.jpg';">
+        <picture>
+          <source srcset="images/demo-nextiweb-site-web-clinique-dentaire-montreal-accueil.avif" type="image/avif">
+          <img src="images/optimized/reception.jpg"
+               alt="Dental clinic reception Montreal — demo website by Nextiweb, web agency for dental clinics"
+               width="1200" height="800" loading="lazy">
+        </picture>
         <div class="pillar__media-tag">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M7 15h6"/></svg>
           27 insurers
