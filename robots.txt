@@ -44,5 +44,4 @@ Allow: /
 # Cartographie & ressources LLM
 Sitemap: https://soins-services.nextiwebstudio.ca/sitemap.xml
 
-# LLM-friendly summary (proposition Jeremy Howard) :
-# https://soins-services.nextiwebstudio.ca/llms.txt
+Llms: https://soins-services.nextiwebstudio.ca/llms.txt
